@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_mehdi_abbes_tm_domain_ToolDocument" object="${tooldocument}" path="/tooldocuments" z="KxUTIxbFFpuF9lk/njuRSmaiLaA=">
+        <field:display field="tool" id="s_com_mehdi_abbes_tm_domain_ToolDocument_tool" object="${tooldocument}" z="HDPlZwwxPOvhmmCfvSgbiY8G83s="/>
+        <field:display field="score" id="s_com_mehdi_abbes_tm_domain_ToolDocument_score" object="${tooldocument}" z="n5EsaL3VuVOcqxleV3rNlqQg3bw="/>
+    </page:show>
+</div>

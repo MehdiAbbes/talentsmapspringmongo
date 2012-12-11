@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_tooldocument" z="44Wi17VdrDlQ9TUV5E6jnBK4Qu8=">
+            <menu:item id="i_tooldocument_new" messageCode="global_menu_new" url="/tooldocuments?form" z="ToM2e+qziwcOOOUFkkQ+iGzy9xU="/>
+            <menu:item id="i_tooldocument_list" messageCode="global_menu_list" url="/tooldocuments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="o10TK8GvgteDnuJ1DZpDBsJ/zD8="/>
+        </menu:category>
+        <menu:category id="c_profiledocument" z="1xGsGMsWGtkK7F2mwzB6Xo+vVNo=">
+            <menu:item id="i_profiledocument_new" messageCode="global_menu_new" url="/profiledocuments?form" z="H6JsDbxZJX7MdLe6KmwE4mfAAEE="/>
+            <menu:item id="i_profiledocument_list" messageCode="global_menu_list" url="/profiledocuments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sFggIC54iPK68/EFc1AX8lEEtto="/>
+        </menu:category>
+        <menu:category id="c_skilldocument" z="aIutFQDLl1F76vsyrULs7DtqiAE=">
+            <menu:item id="i_skilldocument_new" messageCode="global_menu_new" url="/skilldocuments?form" z="1RyKf/CKUeyEJeYVoEvRpjWTyzY="/>
+            <menu:item id="i_skilldocument_list" messageCode="global_menu_list" url="/skilldocuments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZOhyr8DgghwqcONsecde2zXdu4Y="/>
+        </menu:category>
+    </menu:menu>
+</div>

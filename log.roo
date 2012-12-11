@@ -1,0 +1,32 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-11-09 03:06:31
+project --topLevelPackage com.mehdi.abbes.tm --projectName TalentMapMongoSpring
+mongo setup --databaseName talentsmap --host localhost --port 27017
+entity mongo --class ~.domain.ToolDocument --testAutomatically
+field string --fieldName tool --notNull
+field number --type java.lang.Integer --fieldName score 
+entity mongo --class ~.domain.SkillDocument --testAutomatically 
+field string --fieldName category --notNull
+field string --fieldName concept --notNull
+field set --type ~.domain.ToolDocument --fieldName tools 
+field number --type java.lang.Integer --fieldName score 
+entity mongo --class ~.domain.ProfileDocument --testAutomatically 
+field string --fieldName firstname --notNull --sizeMin 2
+field string --fieldName lastname --notNull --sizeMin 2
+field string --fieldName email --regexp "[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]+" --notNull 
+field number --fieldName experienceYears --type int --max 30 --comment "years of experience"
+field date --fieldName hireDate --type java.util.Date --notNull
+field set --fieldName subordinates --type ~.domain.ProfileDocument 
+field reference --fieldName manager --type ~.domain.ProfileDocument
+field set --type ~.domain.SkillDocument --fieldName skills
+repository mongo --interface ~.repository.ToolRepository --entity ~.domain.ToolDocument
+repository mongo --interface ~.repository.SkillRepository --entity ~.domain.SkillDocument
+repository mongo --interface ~.repository.ProfileRepository --entity ~.domain.ProfileDocument
+web mvc setup
+web mvc all --package ~.web
+// script --file ~/Desktop/log.roo
+perform eclipse
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-09 03:28:37
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-11-09 03:29:04
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-10 23:20:29

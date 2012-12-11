@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mehdi_abbes_tm_domain_SkillDocument" items="${skilldocuments}" z="ySlFiixU0OpchyN4EM6nh0GdI+Y=">
+        <table:table data="${skilldocuments}" id="l_com_mehdi_abbes_tm_domain_SkillDocument" path="/skilldocuments" z="KsJM2bYJlaRzIl/+o4zFd+Nyk78=">
+            <table:column id="c_com_mehdi_abbes_tm_domain_SkillDocument_category" property="category" z="9BbxqmTvo6S51LK/IfWWDZ9Ucf0="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_SkillDocument_concept" property="concept" z="byymf8RSuT5Ju0ZDxqWCQMC5Vjc="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_SkillDocument_tools" property="tools" z="t08Fu0HuJmD23PNwW2PSqWb2A3Y="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_SkillDocument_score" property="score" z="BuPH73xNWCNV1kYF/2Bv1WkaWok="/>
+        </table:table>
+    </page:list>
+</div>

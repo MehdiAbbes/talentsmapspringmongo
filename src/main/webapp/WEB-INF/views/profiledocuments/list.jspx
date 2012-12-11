@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mehdi_abbes_tm_domain_ProfileDocument" items="${profiledocuments}" z="xNhW79qL0DHNd8P5XuV/P6CG94E=">
+        <table:table data="${profiledocuments}" id="l_com_mehdi_abbes_tm_domain_ProfileDocument" path="/profiledocuments" z="UmHS8A+cx08a5/2ih5+MGk7KFkY=">
+            <table:column id="c_com_mehdi_abbes_tm_domain_ProfileDocument_firstname" property="firstname" z="XTvfH6mNzNDgjqAeEM7g4YLCzUg="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_ProfileDocument_lastname" property="lastname" z="TLhBtjKiN41XQqQ153ZWFxEPjOw="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_ProfileDocument_email" property="email" z="RL5l7v4goXQo0wJoX9W0NLb9Spc="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_ProfileDocument_experienceYears" property="experienceYears" z="QLMJ3hxQR6i0K0N7Sff4C55T7/M="/>
+            <table:column id="c_com_mehdi_abbes_tm_domain_ProfileDocument_subordinates" property="subordinates" z="7mBOlhKBn+SsMXkYuAdYXFoAzw8="/>
+        </table:table>
+    </page:list>
+</div>
