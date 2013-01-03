@@ -32,7 +32,6 @@
     </filter>
     
     
-    
     <filter>
         <filter-name>HttpMethodFilter</filter-name>
         <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -60,6 +59,10 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>WEB-INF/spring/webmvc-config.xml</param-value>
         </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     
@@ -73,7 +76,7 @@
         <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.aver.restful</param-value>
+            <param-value>com.mehdi.abbes.tm.jersey</param-value>
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
