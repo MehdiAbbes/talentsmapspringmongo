@@ -3,10 +3,11 @@ package com.mehdi.abbes.tm.domain;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.data.annotation.Persistent;
+import org.springframework.hateoas.Identifiable;
 
 @XmlRootElement
 @Persistent
-public class CatalogTool {
+public class CatalogTool implements Identifiable<String> {
 
 	private String id;
 
@@ -50,6 +51,7 @@ public class CatalogTool {
 		this.modified = modified;
 	}
 
+	@Override
 	public String getId() {
 		return id;
 	}

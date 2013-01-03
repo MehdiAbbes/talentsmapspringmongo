@@ -68,6 +68,20 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>JAX-RS Jersey App</servlet-name>
+        <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.aver.restful</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JAX-RS Jersey App</servlet-name>
+        <url-pattern>/jersey/*</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>
