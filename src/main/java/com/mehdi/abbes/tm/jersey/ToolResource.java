@@ -47,7 +47,11 @@ public class ToolResource {
     })
     @Path("/{id}")
     public Response getTool(@PathParam("id") final String toolId) {
-        return Response.ok(this.repo.findOne(toolId)).build();
+        final CatalogTool tool = this.repo.findOne(toolId);
+        if (tool == null) {
+            throw new IllegalStateException("no tool with id [" + toolId + "] exists");
+        }
+        return Response.ok(tool).build();
     }
     
     @POST
