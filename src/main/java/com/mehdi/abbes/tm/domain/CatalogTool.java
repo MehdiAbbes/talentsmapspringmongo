@@ -1,13 +1,22 @@
 package com.mehdi.abbes.tm.domain;
 
+import java.net.URI;
+
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.data.annotation.Persistent;
 import org.springframework.hateoas.Identifiable;
 
+import com.mehdi.abbes.tm.jersey.ToolResource;
+import com.sun.jersey.server.linking.Ref;
+import com.sun.jersey.server.linking.Ref.Style;
+
 @XmlRootElement
 @Persistent
 public class CatalogTool implements Identifiable<String> {
+    
+    @Ref(resource = ToolResource.class, style = Style.ABSOLUTE)
+    private URI toolsURI;
     
     private String id;
     
@@ -49,6 +58,14 @@ public class CatalogTool implements Identifiable<String> {
     
     public void setModified(final boolean modified) {
         this.modified = modified;
+    }
+    
+    public URI getToolsURI() {
+        return this.toolsURI;
+    }
+    
+    public void setToolsURI(final URI toolsURI) {
+        this.toolsURI = toolsURI;
     }
     
     @Override

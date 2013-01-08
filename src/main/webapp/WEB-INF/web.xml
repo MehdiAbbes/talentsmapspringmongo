@@ -59,10 +59,6 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>WEB-INF/spring/webmvc-config.xml</param-value>
         </init-param>
-        <init-param>
-            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
-            <param-value>true</param-value>
-        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     
@@ -77,6 +73,14 @@
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
             <param-value>com.mehdi.abbes.tm.jersey</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+            <param-value>com.sun.jersey.server.linking.LinkFilter</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
